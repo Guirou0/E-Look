@@ -1,8 +1,13 @@
-# React + Vite
+# E-Look
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  No E-Look, você pode pesquisar sobre edições passadas do Sisu obter dados de um determinado curso e um insight sobre o mesmo. A fonte dos dados utilizados são os relatórios disponibilizados pelo Sisu todo ano: <a href="https://sisu.mec.gov.br/#/relatorio#onepage">https://sisu.mec.gov.br/#/relatorio#onepage</a>
 
-Currently, two official plugins are available:
+# Tecnologias
+  <h3>Frontend</h3> - Javascript/React/HTML/CSS e o Vite para facilitar na construção do projeto.
+  <h3>Backend</h3> - Python/Flask/Pandas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" width="40" height="40"/>
+
+# Fotos
+
+
