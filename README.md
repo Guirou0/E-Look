@@ -10,4 +10,11 @@
 
 # Fotos
 
+![Imagem do WhatsApp de 2024-07-17 à(s) 23 25 52_619fb7ab](https://github.com/user-attachments/assets/0a3d5753-3783-4476-87e9-a78207439d79)
+
+![Imagem do WhatsApp de 2024-07-21 à(s) 20 27 03_fa1279d6](https://github.com/user-attachments/assets/025b4593-d083-4c8d-8a36-82c7d848dc22)
+
+![Imagem do WhatsApp de 2024-07-25 à(s) 21 34 40_1d1eed04](https://github.com/user-attachments/assets/b33004e9-76aa-4683-a864-2cb45d7483d5)
+
+
 
