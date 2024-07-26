@@ -1,0 +1,227 @@
+.curso{
+    width: 99%;
+    height: 87.5%;
+    min-height: 570px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(6, 198, 121, .5);
+    border-radius: 20px;
+    box-shadow: -3px 3px 5px #038D66, 3px 3px 5px #038D66;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    gap: 2%;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+}
+
+.loading{
+    
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 16px solid whitesmoke;
+    border-top: 16px solid #038D66;
+    animation: spin 1.2s ease-out infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.back{
+    width: 100%;
+    height: 87.5%;
+    bottom: 0;
+    position: absolute;
+    border-radius: 20px;
+    background-image: url('../src/assets/logo.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    z-index: 0;
+}
+
+.graficos{
+    width: 30%;
+    height: 100%;
+    background-color:  rgb(247, 250, 243, 1);
+    border-radius: 20px;
+    border: 3px solid #038D66;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 10px;
+}
+
+.graficos h1{
+    font-weight: 800;
+    font-size: clamp(1rem, 1.5vw, 2.5vw);
+}
+
+.dados{
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.dados label{
+    width: 100%;
+    font-weight: 700;
+    font-size: clamp(.8rem, 1.5vw, 2.5vw);
+    text-align: center;
+    background-color: rgb(247, 250, 243, 1);
+    padding: 2px;
+    border: 3px solid #038D66;
+}
+
+.dados label:first-of-type{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: none;
+}
+
+.dados label:last-of-type{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: none;
+}
+
+.estatEmap{
+    margin-top: 1%;
+    width: 100%;
+    height: 80%;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.estatisticas, .mapa{
+    width: 50%;
+    height: 100%;
+}
+
+.estatisticas{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mapa{
+    border: 3px solid #038D66;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(247, 250, 243, 1);
+}
+
+.mapa h1{
+    font-weight: 800;
+    font-size: clamp(1rem, 1.5vw, 2.5vw);
+    position: absolute;
+    left: 70.5%;
+    margin-top: 2%;
+    z-index: 2;
+    width: max-content;
+    height: max-content;
+    background-color: rgb(247, 250, 243, 1);
+    padding: 2px;
+    border-radius: 10px;
+    border: 2px solid #038D66;
+}
+
+.mats{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    gap: 5px;
+}
+
+.media, .variancia{
+    width: 50%;
+    background-color: rgb(247, 250, 243, 1);
+    border: 3px solid #038D66;
+    border-radius: 20px;
+    
+}
+
+
+.media h2, .variancia h2{
+    text-align: center;
+    font-size: clamp(.9rem, 1.7vw, 2vw);
+    padding: 3px;
+}
+
+.media h2::after, .variancia h2::after, .chances h2::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #038D66;
+}
+
+.valores{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 25%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(1rem, 2.5vw, 2.5vw);
+    text-shadow: 2px 2px 3px grey;
+}
+
+.chances{
+    width: 100%;
+    height: 65%;
+    border-radius: 20px;
+    border: 3px solid #038D66;
+    background-color: rgb(247, 250, 243, 1);
+    overflow: hidden;
+}
+
+.chances h2{
+    font-size: clamp(.5rem, 1.2vw, 2vw);
+    text-align: center;
+    font-weight: 800;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .curso{
+        flex-direction: column;
+    }
+    .graficos{
+        flex-direction: row;
+        width: 100%;
+        height: 30%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .graficos::-webkit-scrollbar{
+        height: 5px;
+    }
+    .graficos::-webkit-scrollbar-thumb{
+        background-color: #06C679;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+    .graficos h1{
+        display: none;
+    }
+    .dados{
+        width: 100%;
+        height: 65%;
+    }
+    .mapa h1{
+        left: 65%;
+    }
+}

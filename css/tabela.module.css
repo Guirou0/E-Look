@@ -1,0 +1,213 @@
+.tabela{
+    width: 70%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.curso{
+    width: 100%;
+    height: 10%;
+    min-height: 50px;
+    background-image: linear-gradient(#06C679 80%,#038D66);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.curso label{
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    color: white;
+    font-style: normal;
+    font-size: clamp(.8rem, 2vw, 3.4vw);
+    text-align: center;
+    height: 65%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.cursoinput{
+    outline: none;
+    height: 100%;
+    width: 60%;
+    margin-left: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    border: none;
+    color: black;
+    font-size: clamp(.8rem, 1.5vw, 3vw);
+    padding-left: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url("../src/assets/search2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0%;
+    transition: transform .3s linear;
+}
+
+.cursoinput:focus, .curso button:hover{
+    transform: scale(1.1);
+}
+
+
+.curso button{
+    height: 65%;
+    width: 50px;
+    cursor: pointer;
+    background-color: #038D66;
+    border: 1px solid white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: url("../src/assets/send.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    transition: transform .3s linear;
+}
+
+.curso button:active{
+    box-shadow: 1px 1px 4px inset black, -1px -1px 5px inset black;
+}
+
+.tabelaresultados{
+    width: 100%;
+    height: 90%;
+    margin-top: 10px;
+    overflow: scroll;
+    transition: width 1s linear;
+}
+
+.tabelaresultados::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.tabelaresultados::-webkit-scrollbar-thumb{
+    background-color: #06C679;
+    border-radius: 10px;
+    border: 1px solid #038D66;
+}
+
+.tabelaresultados tr:hover{
+    background-color: aliceblue;
+}
+
+.headtable{
+    background-color: #06C679;
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    color: white;
+    padding: 5px;
+    font-style: normal;
+    font-size: clamp(.8rem, 1vw, 2vw);
+    text-align: center;
+    border: 1px solid white;
+    position: sticky;
+    top: 0;
+}
+
+
+.bodytable{
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-size: clamp(.5rem, 1vw, 1.8vw);
+    padding: 5px;
+    border: 1px solid #038D66;
+    text-align: center;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: width 1s linear;
+}
+
+.numresult{
+    display: flex;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid #06C679;
+    width: max-content;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.pagbar{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid #06C679;
+    border-radius: 10px;
+    overflow-x: scroll;
+    overflow-y: visible;
+    padding: 5px;
+    transition: width 1s linear;
+}
+
+.pagbar::-webkit-scrollbar{
+    height: 5px;
+}
+
+.pagbar::-webkit-scrollbar-thumb{
+    background-color: #06C679;
+    border: 1px solid #038D66;
+    border-radius: 10px;
+}
+
+.pageselector{
+    height: 35px;
+    width: 35px;
+    min-width: 35px;
+    border-radius: 100%;
+    background-color: #06C679;
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nf{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 3vw, 4vw);
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .pagination{
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+    .pagbar{
+        width: 100%;
+    }
+    .tabela{
+        width: 65%;
+    }
+    .curso{
+        width: 120%;
+    }
+    .cursoinput{
+        width: 100%;
+    }
+}

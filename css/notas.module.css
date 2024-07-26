@@ -1,0 +1,92 @@
+.notas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 70px;
+    gap: 10px;
+    padding: 2px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 50%;
+}
+
+.notas::-webkit-scrollbar{
+    width: 10px;
+  }
+  
+  
+  .notas::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #06C679;
+    border: 2px solid black;
+  }
+
+.notas label{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: none;
+    font-size: clamp(.8rem, 1vw, 1.5vw);
+    background: none;
+    padding: 3px;
+}
+
+.notas input{
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #038D66;
+    background: none;
+    outline: none;
+    font-size: clamp(1rem, 1.3vw, 1.5vw);
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+
+.resultados{
+    width: 100%;
+    height: 38.5%;
+    max-height: 40%;
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
+
+.previsao{
+    width: 50%;
+    height: 100%;
+    border: 3px solid #038D66;
+    overflow: hidden;
+}
+
+.previsao h1{
+    width: 100%;
+    height: 100%;
+    text-shadow: 1px 1px 5px gray;
+    font-size: clamp(1rem, 1.6vw, 2.5vw);
+    padding-top: 7%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.previsao h2{
+    position: fixed;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 800px) {
+    .notas{
+        max-height: 40%;
+        height: 40%;
+    }
+    .resultados{
+        height: 40%;
+    }
+    .previsao h2{
+        display: none;
+    }
+    
+}

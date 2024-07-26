@@ -1,0 +1,55 @@
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #06C679;
+    box-shadow: 0px 4px 5px #038D66;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    z-index: 2;
+}
+
+.navbar img{
+    height: 120%;
+    transition: transform .8s ease-out
+}
+
+.nav{
+    font-family: "Merriweather", serif;
+    font-weight: 1000;
+    font-style: normal;
+    color: #FCFEF9;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #038D66;
+    font-size: clamp(.9rem, 1.4vw, 3vw);
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav::after{
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2.5px;
+    background-color: #038D66;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: width .4s linear;
+}
+
+.nav:hover::after{
+    width: 90%;
+}
+
+.navbar img:hover{
+    transform: rotateY(360deg);
+}
+
+@media only screen and (max-width: 700px){
+    .navbar{
+        gap: 10px;
+    }
+}

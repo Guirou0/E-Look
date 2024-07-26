@@ -1,0 +1,142 @@
+.filtropesos{
+    width: 20%;
+    height: 90%;
+    background-image: linear-gradient(#06C679 80%, #038D66);
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    color: white;
+    font-style: normal;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 1s linear;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.filtropesos::-webkit-scrollbar{
+    width: 10px;
+}
+
+.filtropesos::-webkit-scrollbar-thumb{
+    background-color: #06C679;
+    border-radius: 10px;
+    border: 1px solid #038D66;
+}
+
+.filtropesos h1{
+    font-size: clamp(1.2rem, 2vw, 3vw);
+}
+
+.pesoslabel{
+    display: flex;
+    flex-direction: row;
+    font-size: .9rem;
+    padding-left: 10px;
+    gap: 5px;
+}
+
+.pesosinput{
+    min-width: 10%;
+    max-width: 40px;
+    max-height: 50px;
+    min-height: 23px;
+    height: 15px;
+}
+
+.formfiltros label{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: clamp(.45rem, 1vw, 1.5vw);
+}
+
+.formfiltros label::after{
+    display: block;
+    content: "";
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.formfiltros {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: visible;
+    max-height: 90%;
+}
+
+.formfiltros input, .formfiltros select{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    color: black;
+    font-style: normal;
+    outline: none;
+    font-size: clamp(.5rem, 1vw, 1.5vw);
+    border-radius: 10px;
+    border: 2px solid #038D66;
+    padding-left: 10px;
+}
+
+.formfiltros select::-webkit-scrollbar{
+    width: 10px;
+}
+
+.formfiltros select::-webkit-scrollbar-thumb{
+    background-color: #06C679;
+    border-radius: 10px;
+    border: 1px solid #038D66;
+}
+
+.formfiltros button{
+    width: max-content;
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    color: white;
+    font-style: normal;
+    font-size: clamp(.6rem, 1.2vw, 2.5vw);
+    background-color: #038D66;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.menu{
+    height: 75%;
+    width: 15%;
+    background: none;
+    border: none;
+    background-image: url('../src/assets/menu2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    cursor: pointer;
+    transition: transform 1s linear;
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+   
+    .formfiltros label{
+        font-size: .5rem;
+    }
+    .filtropesos{
+        height: 70%;
+        position: absolute;
+        right: -10%;
+        min-width: 120px;
+    }
+    .pesoslabel{
+        font-size: .4rem;
+        padding-left: 5px;
+    }
+}
